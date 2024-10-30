@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin - Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="side-image">
+        <div id="logo">
+          <img src="./odin-lined.png" alt="Odin logo" />
+          <h1>Qirall</h1>
+        </div>
+
+        <p>Photo by Haly West on Unsplash</p>
+      </div>
+
+      <div id="content">
+        <div class="head-text">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. <br />
+            Sign up now to get started.
+          </p>
+          <p>You know you want to.</p>
+        </div>
+
+        <form action="#">
+          <h2>Let's do this!</h2>
+
+          <div>
+            <div class="first-name">
+              <label for="first">First Name</label>
+              <input type="text" name="first-name" id="first" required />
+            </div>
+
+            <div class="last-name">
+              <label for="last">Last Name</label>
+              <input type="text" name="last-name" id="last" required />
+            </div>
+          </div>
+
+          <div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="phone">
+              <label for="phone">Phone Number</label>
+              <input type="phone" name="phone" id="phone" required />
+            </div>
+          </div>
+
+          <div>
+            <div class="password">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required />
+              <p class="password-alert">*Passwords don't match</p>
+            </div>
+
+            <div class="confirm">
+              <label for="confirm">Confirm Password</label>
+              <input type="password" name="confirm" id="confirm" required />
+            </div>
+          </div>
+          <div class="button">
+            <button>Create Account</button>
+
+            <p>Already have an Account ? <span>Log in</span></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
